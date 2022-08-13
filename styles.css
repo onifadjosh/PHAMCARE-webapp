@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+:root{
+    --primcol:#6853DF;
+    --seccol:#233567;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.nav-logo{
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.header-content{
+    flex-basis: 55%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+.header-img{
+    background-color: var(--primcol) ;
+    flex-basis: 45%;
+}
+.header-img>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneimg{
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+}
+
+.hamburger{
+    display: none;
+    padding-right: 10px;
+}
+
+.header-info{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header-info>h1{
+    font-size: clamp(3rem, 4vw, 9rem);
+    font-weight: 900;
+    /* letter-spacing: 5px; */
+    color: #2A2B40;
+    /* line-height: 60px; */
+}
+.header-info>p{
+    font-size: clamp(0.8rem, 1vw, 4rem);
+    word-spacing: 3px;
+    line-height: 30px;
+    color: #74769E;
+}
+
+.download-buttons-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    
+}
+
+.download-buttons{
+    display: flex;
+    font-family: var(--ff);
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    text-align: start;
+}
+
+.mob-icon{display: none;}
+
+.appstore{
+    background-color: #FFFFFF;
+    padding: 2px 4px;
+    color: #000000;
+    /* border:.5px solid #000000; */
+    border-radius: 8px;
+    width: inherit;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 5px #000000;
+    
+}
+
+
+.google{
+    background-color: #000000;
+    padding: 2px 4px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.second{
+    font-size:1.6rem;
+}
+
+.section1-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 100vh;
+
+}
+
+.section1-image-wrapper{
+    margin-left: 5%;
+    flex-basis: 50%;
+}
+
+/* .section1-image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+} */
+.section1-content{
+    flex-basis: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.section1-content-title{
+    font-family: 'Varela Round', sans-serif;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: #169FA4;
+    padding-bottom: 20px;
+}
+
+.section1-content>div{
+    display: flex;
+    gap: 40px;
+}
+.icon{
+    width: 20px;
+}
+
+.subhead-title{
+    font-size: clamp(1.2rem, 1vw, 2.5rem);
+    color: var(--seccol);
+    padding-bottom: 5px;
+}
+.subhead-content{
+    font-size: clamp(0.7rem, 0.8vw, 1.5rem);
+    color:#697C91;
+    padding-bottom: 5px;
+}
+
+.section1-info{
+    flex-basis: 60%;
+    /* display: flex; */
+    text-align: start;
+}
+
+.section2-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.section2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+}
+
+.section2-content-title{
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 800;
+    color: #169FA4;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.section2-content>p{
+    font-size: clamp(1rem, 0.9vw, 3rem);
+    color: var(--seccol);
+    line-height: 30px;
+    text-align: start;
+}
+.contact-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 13px;
+    background-color:#6D5AD8 ;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+.contact-button:hover{
+    color: #6D5AD8;
+    background-color:#FFFFFF ;
+    border: 1px solid #6D5AD8;
+}
+
+.section3{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section3-content-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+}
+
+.section3-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-background{
+    width: 100%;
+    height: auto;
+    max-width: 70%;
+}
+.mock-up{
+    width: 100%;
+    height: auto;
+    max-width: 35%;
+    position: absolute;
+    border-radius: 20px;
+    left: 18%;
+    top: -3%;
+    box-shadow: 2px 0px 25px black;
+}
+
+.section3-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section3-content>h3{
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: #222A41;
+    font-weight: 400;
+}
+
+.section3-content>h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+    color:#222A41;
+    word-spacing: 5px;
+}
+
+.section3-content>p{
+    font-size: clamp(1rem, 0.9vw, 3rem);
+    color: #6D7783;
+}
+
+.section3-content>.download-buttons-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D5AD8;
+    color: #FFFFFF;
+    font-size: clamp(1.3rem, 0.7vw, 3rem);
+    font-weight: 100;
+    height: 50vh;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-logo{
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.company-features{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.company-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.company-info>ul>li{
+    list-style-type: none;
+}
+.company-info>ul>li>a{
+    text-decoration: none;
+    font-size: clamp(1.3rem, 0.7vw,3rem);
+    color: #FFFFFF;
+}
+.company-info>ul>li>a:hover{
+    color: var(--seccol);
+}
+.company-socials{
+    display: flex;
+    gap: 10px;
+    line-height: unset;
+    align-items: center;
+}
+
+.footer-icon{
+    background-color: #FFFFFF;
+}
