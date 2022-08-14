@@ -142,7 +142,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 35px;
-    height: 100vh;
+    /* flex-wrap: wrap; */
+    /* height: 100vh; */
 
 }
 
@@ -200,7 +201,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     flex-wrap: wrap;
 }
 
@@ -208,8 +209,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 7%;
     align-items: center;
-    height: 60%;
+    /* height: 60%; */
 }
 
 .section2-content-title{
