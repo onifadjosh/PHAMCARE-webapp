@@ -393,7 +393,7 @@ footer{
 }
 
 .footer-icon{
-    padding: 1px;
+    padding: 10px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
