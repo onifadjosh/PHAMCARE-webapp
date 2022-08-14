@@ -346,7 +346,7 @@ footer{
     justify-content: center;
     flex-direction: column; 
     gap: 20px;  
-    padding-bottom: 20px;
+    padding: 20px 0px;
 }
 
 .footer-logo{
